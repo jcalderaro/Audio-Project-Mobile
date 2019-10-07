@@ -1,0 +1,431 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 80%;
+	margin: 30px 10% ;
+}
+html h4 {
+	font-size: 1.25em;
+}
+
+.container header {
+	display: flex; 
+	justify-content: space-evenly;
+	align-content: center;
+    align-items: center;
+}
+.container header nav {
+	display: flex;
+	justify-content: space-between; 
+	align-content: center; 
+	width: 55%;
+}
+
+.container header nav a {
+	text-decoration: none;
+	color: grey;
+  }
+
+
+.container .firstHalf {
+	border-bottom: 1px solid black;
+	padding: 0% 0% 10%;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 10% 10% 10%;
+
+}
+
+.container .firstSection {
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+	width: 49.5%;
+	
+	}
+
+.container .firstSection h1 {
+	font-size: 75px;
+	display: flex;
+	
+}
+
+.container .image1 {
+	width: 49.5%;
+}
+
+.container .firstSection button {
+	background: white;
+	color: black;
+	border: 1px solid black;
+	width: 150px;
+	height: 30px;
+	font-size: 1em;
+}
+
+.container .featAbout {
+	display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container .featuresSection {
+	display: flex;
+	flex-direction: column;
+	width: 49.5%;
+	padding: 50px 0;
+}
+
+.container .aboutSection {
+	display: flex;
+	flex-direction: column;
+	width: 49.5%;
+	padding: 50px 0;
+}
+.container .image2 {
+    display: flex;
+    justify-content: center;
+}
+
+.container .servicesSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
+}
+
+.container .productSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
+}
+
+.container .visionSection {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 50px 0;
+}
+
+.container .threeSections {
+	border-bottom: 1px solid black;
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container footer {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container footer .contactSection {
+	padding-top: 50px;
+    display: flex;  
+}
+
+.container footer address {
+	padding: 20px 0;
+}
+
+.container footer div {
+	padding-bottom: 20px;
+}
+
+.container footer .copyrightSection {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.container .servicesSection2 h2 {
+	font-size: 30px;
+}
+
+.container .servicesSection2 {
+	border-bottom: 1px solid black;
+	padding: 30px 0;
+}
+
+.container .boxes {
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px 0;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
+.container .boxes button {
+	width: 175px;
+	background-color: white;
+	height: 40px;
+	margin: 20px 0;
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+.container .boxes .digitalDesign {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .uiux {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .digitalMarketing {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .webDev {
+	border: 1px solid black;
+	width: 45%;
+	margin-bottom: 30px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .ios {
+	border: 1px solid black;
+	width: 45%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .boxes .android {
+	border: 1px solid black;
+	width: 45%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.container .factsDiv {
+	display: flex;
+	padding-top: 30px;
+}
+
+.container .factsDiv .factsSection {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-right: 50px;
+	margin-left: 20px;
+}
+
+.container .factsDiv .image {
+	display: flex;
+	width: 45%;
+}
+
+.container .factsDiv .factsSection ul {
+	margin: 10px;
+}
+
+@media(max-width: 800px) {
+    html {
+        margin: 10%;
+    }
+    
+    .container header .logo {
+        margin: 5%;
+    }
+    .container header {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .container header nav {
+        margin-top: 5%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .firstHalf {
+        width: 100%;
+        margin: 0;
+    }
+    .container .image1{
+        display: none;
+    }
+
+    .container .firstSection {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        }
+    
+    .container .middle-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container .featAbout {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container .threeSections {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .container footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 500px) {
+    .container nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container nav a {
+        border-bottom: 1px solid grey;
+        width: 100%; 
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .container .firstHalf {
+        padding: 10% 0;
+    }
+
+    .container .featAbout {
+        flex-direction: column;
+    }
+
+    .container .featuresSection {
+        width: 100%;
+    }
+
+    .container .aboutSection {
+        width: 100%;
+    }
+
+    .container .threeSections {
+        flex-direction: column;
+    }
+
+    .container .servicesSection {
+        width: 100%;
+    }
+
+    .container .productSection {
+        width: 100%;
+    }
+
+    .container .visionSection {
+        width: 100%;
+    }
+}

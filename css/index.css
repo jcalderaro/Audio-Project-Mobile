@@ -54,20 +54,24 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	background-color: black;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* ------------------------------------------------------------------------------------------- */
+/* 	The Above Information Is Default CSS. The Below Information Is MY CSS 					   */
+/* ------------------------------------------------------------------------------------------- */
 
 .container {
 	width: 80%;
 	margin: 30px 10% ;
+	color: palegoldenrod;
 }
 html h4 {
 	font-size: 1.25em;
@@ -92,8 +96,34 @@ html h4 {
   }
 
 
+/* ------------------------------------------------------------------------------------------- */
+/* 	The Above Information Is Header & NavBar Elements. 										   */
+/* ------------------------------------------------------------------------------------------- */
+
+
 .container .firstHalf {
-	border-bottom: 1px solid black;
+	border-top: 1px solid darkorchid;
+	border-bottom: 1px solid darkorchid;
+	padding: 0% 0% 10%;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 10% 10% 10%;
+}
+
+.container .firstSection button {
+	background: black;
+	color: palegoldenrod;
+	border: 1px solid darkorchid;
+	width: 150px;
+	height: 30px;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.container .topHalf {
+	border-bottom: 1px solid darkorchid;
 	padding: 0% 0% 10%;
 	display: flex;
 	align-items: center;
@@ -103,40 +133,6 @@ html h4 {
 
 }
 
-.container .firstSection {
-	display: flex;
-	flex-direction: column; 
-	justify-content: center;
-	align-items: center;
-	width: 49.5%;
-	
-	}
-
-.container .firstSection h1 {
-	font-size: 75px;
-	display: flex;
-	
-}
-
-.container .image1 {
-	width: 49.5%;
-}
-
-.container .firstSection button {
-	background: white;
-	color: black;
-	border: 1px solid black;
-	width: 150px;
-	height: 30px;
-	font-size: 1em;
-}
-
-.container .featAbout {
-	display: flex;
-    width: 80%;
-    margin: 0 10%;
-}
-
 .container .featuresSection {
 	display: flex;
 	flex-direction: column;
@@ -144,62 +140,10 @@ html h4 {
 	padding: 50px 0;
 }
 
-.container .aboutSection {
-	display: flex;
-	flex-direction: column;
-	width: 49.5%;
-	padding: 50px 0;
-}
-.container .image2 {
-    display: flex;
-    justify-content: center;
-}
+/* ------------------------------------------------------------------------------------------- */
+/* 	The Above Information Is The Body Text Content											   */
+/* ------------------------------------------------------------------------------------------- */
 
-.container .servicesSection {
-	display: flex;
-	flex-direction: column;
-	width: 33%;
-	padding: 50px 0;
-}
-
-.container .productSection {
-	display: flex;
-	flex-direction: column;
-	width: 33%;
-	padding: 50px 0;
-}
-
-.container .visionSection {
-	display: flex;
-	flex-direction: column;
-	width: 33%;
-	padding: 50px 0;
-}
-
-.container .threeSections {
-	border-bottom: 1px solid black;
-    display: flex;
-    width: 80%;
-    margin: 0 10%;
-}
-
-.container footer {
-    width: 80%;
-    margin: 0 10%;
-}
-
-.container footer .contactSection {
-	padding-top: 50px;
-    display: flex;  
-}
-
-.container footer address {
-	padding: 20px 0;
-}
-
-.container footer div {
-	padding-bottom: 20px;
-}
 
 .container footer .copyrightSection {
 	text-align: center;
@@ -207,122 +151,17 @@ html h4 {
 }
 
 .container .servicesSection2 h2 {
-	font-size: 30px;
-}
-
-.container .servicesSection2 {
-	border-bottom: 1px solid black;
-	padding: 30px 0;
-}
-
-.container .boxes {
-	border-bottom: 2px solid black;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 30px 0;
-	justify-content: space-around;
-	align-content: space-between;
-}
-
-.container .boxes button {
-	width: 175px;
-	background-color: white;
-	height: 40px;
-	margin: 20px 0;
-	border-radius: 8px;
-	text-decoration: none;
-}
-
-.container .boxes .digitalDesign {
-	border: 1px solid black;
-	width: 45%;
-	margin-bottom: 30px;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 20px;
+	font-size: 500px;
 }
 
 .container .boxes .uiux {
-	border: 1px solid black;
 	width: 45%;
 	margin-bottom: 30px;
 	height: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #f2f2f2;
 	padding: 20px;
-}
-
-.container .boxes .digitalMarketing {
-	border: 1px solid black;
-	width: 45%;
-	margin-bottom: 30px;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
-.container .boxes .webDev {
-	border: 1px solid black;
-	width: 45%;
-	margin-bottom: 30px;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
-.container .boxes .ios {
-	border: 1px solid black;
-	width: 45%;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
-.container .boxes .android {
-	border: 1px solid black;
-	width: 45%;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
-.container .factsDiv {
-	display: flex;
-	padding-top: 30px;
-}
-
-.container .factsDiv .factsSection {
-	display: flex;
-	flex-direction: column;
-	width: 45%;
-	margin-right: 50px;
-	margin-left: 20px;
-}
-
-.container .factsDiv .image {
-	display: flex;
-	width: 45%;
-}
-
-.container .factsDiv .factsSection ul {
-	margin: 10px;
 }
 
 @media(max-width: 800px) {
@@ -347,7 +186,13 @@ html h4 {
     .container .firstHalf {
         width: 100%;
         margin: 0;
-    }
+	}
+	
+	.container .topHalf {
+        width: 100%;
+        margin: 0;
+	}
+	
     .container .image1{
         display: none;
     }
@@ -358,9 +203,16 @@ html h4 {
         justify-content: center;
         align-items: center;
         width: 100%;
-        
-        }
-    
+    }
+
+    .container .topSection {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }	
+
     .container .middle-img {
         width: 100%;
         height: auto;
@@ -398,6 +250,10 @@ html h4 {
     }
 
     .container .firstHalf {
+        padding: 10% 0;
+	}
+	
+	.container .topHalf {
         padding: 10% 0;
     }
 
